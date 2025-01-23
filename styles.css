@@ -42,7 +42,7 @@ nav ul li {
   margin: 10px 20px;
 }
 nav ul li a {
-  color: #f9e400;
+  color: #ffffff;
   text-decoration: none;
   font-size: 18px;
   position: relative;
@@ -255,15 +255,15 @@ nav ul li a:hover::after {
   overflow: hidden;
 }
 .contact-left {
-  padding: 30px 110px;
+  padding: 100px 50px;
   flex-basis: 45%;
 }
 .contact-right {
-  flex-basis: 35%;
+  flex-basis: 45%;
 }
 .content-left p {
-  margin-top: 30px;
-  margin-left: -20px;
+  margin-top: 50px;
+  margin-left: 50px;
 }
 .content-left i {
   color: #ff004f;
@@ -323,14 +323,10 @@ form .btn2 {
   color: #ff004f;
 }
 /*-------css for small screen----*/
-nav.fas {
+nav .fas {
   display: none;
 }
-
 @media only screen and (max-width: 600px) {
-  .image-container {
-    background-image: url(images/nagendra\ 2.jpg);
-  }
   .header-text {
     margin-top: 100%;
     font-size: 16px;
@@ -338,17 +334,17 @@ nav.fas {
   .header-text h1 {
     font-size: 30px;
   }
-  nav.fas {
+  nav .fas {
     display: block;
-    font-size: 20px;
+    font-size: 25px;
   }
   nav ul {
     background: #ff004f;
     position: fixed;
     top: 0;
     right: -200px;
-    width: 200%;
-    height: 30vh;
+    width: 200px;
+    height: 100vh;
     padding-top: 50px;
     z-index: 2;
     transition: right 0.5s;
@@ -358,6 +354,7 @@ nav.fas {
     margin: 25px;
   }
   nav ul .fas {
+    display: nones;
     position: absolute;
     top: 25px;
     left: 25px;
@@ -383,13 +380,9 @@ nav.fas {
   .contact-left,
   .contact-right {
     flex-basis: 100%;
+    padding-left: 40px;
   }
   .copyright {
     font-size: 14px;
   }
-}
-#msg {
-  color: #64b752;
-  margin-top: 10px;
-  display: block;
 }
